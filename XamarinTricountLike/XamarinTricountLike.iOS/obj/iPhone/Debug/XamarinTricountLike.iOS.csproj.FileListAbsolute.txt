@@ -1,0 +1,14 @@
+C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.iOS\bin\iPhone\Debug\XamarinTricountLikeiOS.exe
+C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.iOS\bin\iPhone\Debug\XamarinTricountLikeiOS.pdb
+C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
+C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
+C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.dll
+C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.iOS\bin\iPhone\Debug\XamarinTricountLike.dll
+C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.iOS\bin\iPhone\Debug\XamarinTricountLike.pdb
+C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.iOS\bin\iPhone\Debug\XamarinTricountLike.dll.mdb
+C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.xml
+C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.xml
+C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.iOS\obj\iPhone\Debug\
+C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.iOS\obj\iPhone\Debug\XamarinTricountLike.iOS.csprojResolveAssemblyReference.cache
+C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.iOS\obj\iPhone\Debug\XamarinTricountLikeiOS.exe
+C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.iOS\obj\iPhone\Debug\XamarinTricountLikeiOS.pdb
