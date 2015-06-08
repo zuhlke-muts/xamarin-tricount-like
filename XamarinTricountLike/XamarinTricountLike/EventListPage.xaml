@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinTricountLike;assembly=XamarinTricountLike"
+             x:Class="XamarinTricountLike.EventListPage"
+             Title="Event List"
+             Padding="20, 20, 20, 20">
+
+  
+    <StackLayout>
+      <StackLayout Orientation="Horizontal" >
+        <Label Text="Events" FontSize="Large" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+        <Button Text="+" VerticalOptions="Center"  />
+      </StackLayout>
+      <ListView x:Name="listView"
+              IsVisible="true"
+              ItemsSource="{x:Static local:App.EventItems}">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <ViewCell.View>
+                  <Label Text="{Binding DisplayName}"
+                         HorizontalOptions="FillAndExpand" YAlign="Center" />
+
+              </ViewCell.View>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+     </StackLayout>
+  
+</ContentPage>

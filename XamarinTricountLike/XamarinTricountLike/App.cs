@@ -1,6 +1,8 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
-using SQLite;
+using System.Text;
+
 using Xamarin.Forms;
 using XamarinTricountLike.Database;
 using XamarinTricountLike.Models;
@@ -9,24 +11,17 @@ namespace XamarinTricountLike
 {
     public class App : Application
     {
-        static SQLiteConnection _databaseConnection;
+        public static readonly List<EventItem> EventItems = new List<EventItem>()
+        {
+            new EventItem() { DisplayName = "Christians Event" },
+            new EventItem() { DisplayName = "Riinas Event" },
+            new EventItem() { DisplayName = "Roman Event"}
+        }; 
 
         public App()
         {
             // The root page of your application
-            MainPage = new ContentPage
-            {
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-						new Label {
-							XAlign = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-                }
-            };
+            MainPage = new EventListPage();
         }
 
         public static SQLiteConnection DatabaseConnection
@@ -60,5 +55,10 @@ namespace XamarinTricountLike
         {
             
         }
+    }
+
+    public class EventItem
+    {
+        public string DisplayName { get; set; }
     }
 }
