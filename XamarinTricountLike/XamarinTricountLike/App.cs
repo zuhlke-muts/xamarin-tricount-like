@@ -1,30 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿using System.Collections.Generic;
 using Xamarin.Forms;
 
 namespace XamarinTricountLike
 {
     public class App : Application
     {
+        public static readonly List<EventItem> EventItems = new List<EventItem>()
+        {
+            new EventItem() { DisplayName = "Christians Event" },
+            new EventItem() { DisplayName = "Riinas Event" },
+            new EventItem() { DisplayName = "Roman Event"}
+        }; 
+
         public App()
         {
             // The root page of your application
-            MainPage = new ContentPage
-            {
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-						new Label {
-							XAlign = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-                }
-            };
+            MainPage = new EventListPage();
         }
 
         protected override void OnStart()
@@ -41,5 +32,10 @@ namespace XamarinTricountLike
         {
             // Handle when your app resumes
         }
+    }
+
+    public class EventItem
+    {
+        public string DisplayName { get; set; }
     }
 }
