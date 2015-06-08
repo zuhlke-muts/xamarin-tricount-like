@@ -15,7 +15,7 @@ namespace XamarinTricountLike
         public App()
         {
             // The root page of your application
-            MainPage = new EventListPage();
+            MainPage = new NavigationPage(new EventListPage());
         }
 
         protected override void OnStart()
