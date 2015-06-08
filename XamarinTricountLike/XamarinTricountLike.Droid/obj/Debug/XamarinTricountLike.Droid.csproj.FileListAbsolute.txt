@@ -1,8 +1,6 @@
 C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\bin\Debug\XamarinTricountLike.Droid.dll
 C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\bin\Debug\XamarinTricountLike.Droid.pdb
 C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\bin\Debug\XamarinTricountLike.Droid.dll.mdb
-C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\bin\Debug\XamarinTricountLike.Droid.apk
-C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\bin\Debug\XamarinTricountLike.Droid-Signed.apk
 C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\bin\Debug\FormsViewGroup.dll
 C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
 C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\bin\Debug\Xamarin.Forms.Core.dll
@@ -15,7 +13,6 @@ C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\bin\Debu
 C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\obj\Debug\XamarinTricountLike.Droid.csprojResolveAssemblyReference.cache
 C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\obj\Debug\XamarinTricountLike.Droid.dll
 C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\obj\Debug\XamarinTricountLike.Droid.pdb
-C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\obj\Debug\android\bin\XamarinTricountLike.Droid.apk
 C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\obj\Debug\res\drawable\icon.png
 C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\obj\Debug\res\drawable-hdpi\icon.png
 C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\obj\Debug\res\drawable-xhdpi\icon.png
@@ -23,3 +20,6 @@ C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\obj\Debu
 C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\obj\Debug\R.cs.flag
 C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\obj\Debug\uploadflags.txt
 C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\bin\Debug\XamarinTricountLike.dll.mdb
+C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\bin\Debug\zuehlke.muts.camp.apk
+C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\bin\Debug\zuehlke.muts.camp-Signed.apk
+C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike.Droid\obj\Debug\android\bin\zuehlke.muts.camp.apk
