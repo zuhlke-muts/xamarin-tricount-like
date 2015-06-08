@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using SQLite;
 using Xamarin.Forms;
 using XamarinTricountLike.Database;
 using XamarinTricountLike.Models;
@@ -23,6 +23,8 @@ namespace XamarinTricountLike
             // The root page of your application
             MainPage = new EventListPage();
         }
+
+        private static SQLiteConnection _databaseConnection;
 
         public static SQLiteConnection DatabaseConnection
         {
