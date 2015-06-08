@@ -56,6 +56,22 @@ namespace XamarinTricountLike.Droid
 			{
 			}
 		}
+		
+		public partial class Raw
+		{
+			
+			// aapt resource value: 0x7f030000
+			public const int TricountLike = 2130903040;
+			
+			static Raw()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Raw()
+			{
+			}
+		}
 	}
 }
 #pragma warning restore 1591
