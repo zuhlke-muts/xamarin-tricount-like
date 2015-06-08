@@ -1,8 +1,0 @@
-C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike\bin\Debug\XamarinTricountLike.dll
-C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike\bin\Debug\XamarinTricountLike.pdb
-C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike\bin\Debug\Xamarin.Forms.Core.dll
-C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike\bin\Debug\Xamarin.Forms.Xaml.dll
-C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike\bin\Debug\Xamarin.Forms.Core.xml
-C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike\obj\Debug\XamarinTricountLike.dll
-C:\VS\XamarinTricountLike\XamarinTricountLike\XamarinTricountLike\obj\Debug\XamarinTricountLike.pdb
