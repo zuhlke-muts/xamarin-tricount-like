@@ -14,12 +14,12 @@
       </StackLayout>
       <ListView x:Name="listView"
               IsVisible="true"
-              ItemsSource="{x:Static local:App.EventItems}">
+              ItemsSource="{x:Static local:App.Events}">
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
               <ViewCell.View>
-                  <Label Text="{Binding DisplayName}"
+                  <Label Text="{Binding Name}"
                          HorizontalOptions="FillAndExpand" YAlign="Center" />
 
               </ViewCell.View>

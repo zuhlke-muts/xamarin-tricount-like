@@ -11,12 +11,7 @@ namespace XamarinTricountLike
 {
     public class App : Application
     {
-        public static readonly List<EventItem> EventItems = new List<EventItem>()
-        {
-            new EventItem() { DisplayName = "Christians Event" },
-            new EventItem() { DisplayName = "Riinas Event" },
-            new EventItem() { DisplayName = "Roman Event"}
-        }; 
+        public static IEnumerable<Event> Events;
 
         public App()
         {
@@ -44,8 +39,14 @@ namespace XamarinTricountLike
             // Handle when your app starts
             DatabaseConnection.Insert(new Event
             {
-               Name = "zühlke camp"
+                Name = "Adrien Event"
             });
+            DatabaseConnection.Insert(new Event
+            {
+                Name = "Dani Event"
+            });
+
+            Events = new EventRepository().GetAllEvents();
         }
 
         protected override void OnSleep()
@@ -57,10 +58,5 @@ namespace XamarinTricountLike
         {
             
         }
-    }
-
-    public class EventItem
-    {
-        public string DisplayName { get; set; }
     }
 }
