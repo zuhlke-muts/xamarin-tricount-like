@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 
 namespace XamarinTricountLike
 {
@@ -6,7 +7,19 @@ namespace XamarinTricountLike
     {
         public EventListPage()
         {
-            InitializeComponent();
+            InitializeComponent();           
+        }
+
+        public void OnAddEvent(object sender, EventArgs e)
+        {
+            var eventSettingsPage = new EventSettingsPage {BindingContext = new EventItem() {DisplayName = "Test"}};
+            Navigation.PushAsync(eventSettingsPage);
+        }
+
+        public void OnEditEvent(object sender, SelectedItemChangedEventArgs e)
+        {
+            var eventSettingsPage = new EventSettingsPage { BindingContext = e.SelectedItem };
+            Navigation.PushAsync(eventSettingsPage);
         }
     }
 }

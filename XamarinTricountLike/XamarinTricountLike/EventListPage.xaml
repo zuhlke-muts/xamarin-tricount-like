@@ -6,15 +6,14 @@
              Title="Event List"
              Padding="20, 20, 20, 20">
 
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Name="Add" Activated="OnAddEvent"></ToolbarItem>
+  </ContentPage.ToolbarItems>
   
     <StackLayout>
-      <StackLayout Orientation="Horizontal" >
-        <Label Text="Events" FontSize="Large" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
-        <Button Text="+" VerticalOptions="Center"  />
-      </StackLayout>
       <ListView x:Name="listView"
               IsVisible="true"
-              ItemsSource="{x:Static local:App.Events}">
+              ItemsSource="{x:Static local:App.Events}" ItemSelected="OnEditEvent">
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
