@@ -10,11 +10,7 @@ namespace XamarinTricountLike.Droid.Database
 {
 	public class SQLite_Android : ISQLite
 	{
-		public SQLite_Android ()
-		{
-		}
-
-		#region ISQLite implementation
+	    #region ISQLite implementation
 		public SQLite.SQLiteConnection GetConnection ()
 		{
 			var sqliteFilename = "TricountLike.db3";

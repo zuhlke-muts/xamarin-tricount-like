@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using SQLite;
 using Xamarin.Forms;
@@ -42,16 +43,16 @@ namespace XamarinTricountLike
             {
                 Name = "Adrien Event"
             });
-            DatabaseConnection.Insert(new Event
-            {
-                Name = "Dani Event"
-            });
 
             var events = new EventRepository().GetAllEvents();
-            foreach (var item in events)
+            Device.BeginInvokeOnMainThread(() =>
             {
-                Events.Add(item);
-            }
+                foreach (var item in events)
+                {
+                    Events.Add(item);
+                }
+            });
+            
         }
 
         protected override void OnSleep()
