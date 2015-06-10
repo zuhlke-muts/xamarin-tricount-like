@@ -16,9 +16,9 @@ namespace XamarinTricountLike
             Navigation.PushAsync(eventSettingsPage);
         }
 
-        public void OnEditEvent(object sender, SelectedItemChangedEventArgs e)
+        public void OnTappedEvent(object sender, ItemTappedEventArgs e)
         {
-            var eventSettingsPage = new EventSettingsPage { BindingContext = e.SelectedItem };
+            var eventSettingsPage = new EventSettingsPage { BindingContext = e.Item };
             Navigation.PushAsync(eventSettingsPage);
         }
     }
