@@ -4,5 +4,5 @@
              x:Class="XamarinTricountLike.EventSettingsPage"
              Title="Event Settings"
              Padding="20, 20, 20, 20">
-  <Label Text="{Binding DisplayName}"/>
+  <Label Text="{Binding Name}"/>
 </ContentPage>

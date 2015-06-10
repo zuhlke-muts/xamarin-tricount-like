@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using SQLite;
@@ -11,7 +12,7 @@ namespace XamarinTricountLike
 {
     public class App : Application
     {
-        public static IEnumerable<Event> Events;
+        public static readonly ObservableCollection<Event> Events = new ObservableCollection<Event>();
 
         public App()
         {
@@ -46,7 +47,11 @@ namespace XamarinTricountLike
                 Name = "Dani Event"
             });
 
-            Events = new EventRepository().GetAllEvents();
+            var events = new EventRepository().GetAllEvents();
+            foreach (var item in events)
+            {
+                Events.Add(item);
+            }
         }
 
         protected override void OnSleep()
