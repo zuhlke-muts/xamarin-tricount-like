@@ -17,6 +17,9 @@
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
+              <ViewCell.ContextActions>
+                <MenuItem Text="Delete" IsDestructive="true" Clicked="OnDeleteClick" CommandParameter="{Binding .}" />
+              </ViewCell.ContextActions>
               <ViewCell.View>
                   <Label Text="{Binding Name}"
                          HorizontalOptions="FillAndExpand" YAlign="Center" />

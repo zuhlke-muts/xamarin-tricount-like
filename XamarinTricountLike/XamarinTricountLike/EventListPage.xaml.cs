@@ -1,5 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
+using XamarinTricountLike.Database;
 using XamarinTricountLike.Models;
 
 namespace XamarinTricountLike
@@ -13,7 +14,7 @@ namespace XamarinTricountLike
 
         public void OnAddEvent(object sender, EventArgs e)
         {
-            var eventSettingsPage = new EventSettingsPage {BindingContext = new Event() {Name = "Test"}};
+            var eventSettingsPage = new EventSettingsPage {BindingContext = new Event()};
             Navigation.PushAsync(eventSettingsPage);
         }
 
@@ -22,5 +23,13 @@ namespace XamarinTricountLike
             var eventSettingsPage = new EventSettingsPage { BindingContext = e.Item };
             Navigation.PushAsync(eventSettingsPage);
         }
+
+        public void OnDeleteClick(object sender, EventArgs e)
+        {
+            var item = (Event)((MenuItem)sender).CommandParameter;
+            new EventRepository().DeleteItem(item.ID);
+            Device.BeginInvokeOnMainThread(() => App.Events.Remove(item));
+        }
+
     }
 }

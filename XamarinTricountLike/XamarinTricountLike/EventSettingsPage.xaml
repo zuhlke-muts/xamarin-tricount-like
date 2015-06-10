@@ -4,5 +4,16 @@
              x:Class="XamarinTricountLike.EventSettingsPage"
              Title="Event Settings"
              Padding="20, 20, 20, 20">
-  <Label Text="{Binding Name}"/>
+  <StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Name" YAlign="Center" />
+      <Entry Text="{Binding Name}" HorizontalOptions="FillAndExpand"/>
+    </StackLayout>
+    
+    <StackLayout Orientation="Horizontal">
+      <Button Text="Cancel" HorizontalOptions="FillAndExpand" Clicked="OnCancelClicked" />
+      <Button Text="Save" HorizontalOptions="FillAndExpand" Clicked="OnSaveClicked" />
+    </StackLayout>
+  </StackLayout>
+  
 </ContentPage>

@@ -39,10 +39,6 @@ namespace XamarinTricountLike
         protected override void OnStart()
         {
             // Handle when your app starts
-            DatabaseConnection.Insert(new Event
-            {
-                Name = "Adrien Event"
-            });
 
             var events = new EventRepository().GetAllEvents();
             Device.BeginInvokeOnMainThread(() =>
