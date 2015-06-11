@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="AndroidTests.cs" />
     <Compile Include="CrossPlatformTests.cs" />
+    <Compile Include="IOSTests.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,27 +7,15 @@ using Xamarin.UITest.Utils;
 
 namespace XamarinTricountLike.UITests
 {
-    public class WaitTimes : IWaitTimes
-    {
-        public TimeSpan WaitForTimeout
-        {
-            get { return TimeSpan.FromSeconds(120); }
-        }
-
-        public TimeSpan GestureWaitTimeout
-        {
-            get { return TimeSpan.FromSeconds(10); }
-        }
-    }
 
     [TestFixture]
     public class AndroidTests : CrossPlatformTests
     {
         [SetUp]
-        public void SetUp()
+        public override void SetUp()
         {
             // an API key is required to publish on Xamarin Test Cloud for remote, multi-device testing
-            App = ConfigureApp.Android.ApkFile(PathToApk).DeviceSerial("019314f0").WaitTimes(new WaitTimes()).StartApp();
+            App = ConfigureApp.Android.ApkFile(PathToApk).StartApp();
         }
 
         public string PathToApk { get; set; }
@@ -40,7 +28,7 @@ namespace XamarinTricountLike.UITests
             var fi = new FileInfo(currentFile);
             string dir = fi.Directory.Parent.Parent.Parent.FullName;
             // update the project name (Android) and output filename (UITestDemo.Android) for each app
-            PathToApk = Path.Combine(dir, "XamarinTricountLike", "XamarinTricountLike.Droid", "bin", "Debug",
+            PathToApk = Path.Combine(dir, "XamarinTricountLike", "XamarinTricountLike.Droid", "bin", "Release",
                 "zuehlke.muts.camp.apk");
         }
     }

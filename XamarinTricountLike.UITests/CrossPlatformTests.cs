@@ -9,9 +9,15 @@ namespace XamarinTricountLike.UITests
     public class CrossPlatformTests
     {
         protected IApp App;
-
-        static readonly Func<AppQuery, AppQuery> AddButton = c => c.Marked("AddButton");
-        static readonly Func<AppQuery, AppQuery> SaveButton = c => c.Marked("SaveButton").Text("Save");
+            
+        static readonly Func<AppQuery, AppQuery> AddButton = c => c.All().Property("Text", "Add");
+        static readonly Func<AppQuery, AppQuery> SaveButton = c => c.Marked("SaveButton");
+        
+        [SetUp]
+        public virtual void SetUp()
+        {
+            Assert.Ignore();
+        }
 
         /// <summary>
         /// This test checks the value of a Label, presses a AddButton, then checks the Label text again
