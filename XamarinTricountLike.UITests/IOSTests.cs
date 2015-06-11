@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 using Xamarin.UITest;
+using Xamarin.UITest.Queries;
 
 namespace XamarinTricountLike.UITests
 {
@@ -23,7 +24,7 @@ namespace XamarinTricountLike.UITests
             FileInfo fi = new FileInfo(currentFile);
             string dir = fi.Directory.Parent.Parent.Parent.FullName;
             // update the project name (iOS) and output filename (UITestDemoiOS) for each app
-            PathToIPA = Path.Combine(dir, "XamarinTricountLike.iOS", "bin", "iPhoneSimulator", "Debug", "XamarinTricountLike.iOS.app");
+			PathToIPA = Path.Combine(dir, "XamarinTricountLike/XamarinTricountLike.iOS", "bin", "iPhoneSimulator", "Debug", "XamarinTricountLikeiOS.app");
         }
 
         [SetUp]
@@ -32,5 +33,9 @@ namespace XamarinTricountLike.UITests
             // an API key is required to publish on Xamarin Test Cloud for remote, multi-device testing
             App = ConfigureApp.iOS.AppBundle(PathToIPA).StartApp();
         }
+
+		public override Func<AppQuery, AppQuery> ToolbarAddButton() {
+			return c => c.Class ("UIButton").Marked("Add");
+		}
     }
 }

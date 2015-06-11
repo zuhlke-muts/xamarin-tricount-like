@@ -10,13 +10,12 @@ namespace XamarinTricountLike.UITests
     {
         protected IApp App;
             
-        static readonly Func<AppQuery, AppQuery> AddButton = c => c.All().Property("Text", "Add");
-        static readonly Func<AppQuery, AppQuery> SaveButton = c => c.Marked("SaveButton");
+		static readonly Func<AppQuery, AppQuery> SaveButton = c => c.Marked("SaveButton");
         
         [SetUp]
         public virtual void SetUp()
         {
-            Assert.Ignore();
+			Assert.Ignore("This class requires a platform-specific bootstrapper to override the `SetUp` method");
         }
 
         /// <summary>
@@ -28,11 +27,22 @@ namespace XamarinTricountLike.UITests
             // Arrange
             
             // Act
-            App.Tap(AddButton);
+			App.Tap(ToolbarAddButton());
 
             // Assert
-            var result = App.Query(SaveButton);
+			var result = App.WaitForElement(SaveButton, "timeout waiting for properties view");
             Assert.IsTrue(result.Any(), "SaveButton not shown");
         }
+
+		public virtual Func<AppQuery, AppQuery> ToolbarAddButton() {
+			throw new NotImplementedException();
+		}
+
+		[Test]
+		public void FirstUnitTest()
+		{
+			//Uncomment to start the console to watch the view tree (type tree)
+			//App.Repl();
+		}
     }
 }

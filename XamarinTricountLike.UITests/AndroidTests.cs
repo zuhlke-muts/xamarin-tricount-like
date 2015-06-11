@@ -4,6 +4,7 @@ using System.Reflection;
 using NUnit.Framework;
 using Xamarin.UITest;
 using Xamarin.UITest.Utils;
+using Xamarin.UITest.Queries;
 
 namespace XamarinTricountLike.UITests
 {
@@ -31,5 +32,9 @@ namespace XamarinTricountLike.UITests
             PathToApk = Path.Combine(dir, "XamarinTricountLike", "XamarinTricountLike.Droid", "bin", "Release",
                 "zuehlke.muts.camp.apk");
         }
+
+		public override Func<AppQuery, AppQuery> ToolbarAddButton() {
+			return c => c.All().Property("Text", "Add");
+		}
     }
 }
